@@ -4,13 +4,13 @@ import SettlementPiece from './SettlementPiece';
 import City from './City';
 
 const style = {
-    container : `h-24 w-auto bg-gray-700 mx-4`,
+    container : `h-24 w-auto bg-gray-700 mx-4 mt-6`,
 }
 
 function Pieces(props) {
     return(
         <div className={style.container}>
-            <div class="bg-gray-300">
+            <div class="bg-gray-300 font-medium">
             Pieces    
             </div>
             <div class="flex flex-row h-28 ml-6 -mt-5">

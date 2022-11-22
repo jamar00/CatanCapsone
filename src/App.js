@@ -6,6 +6,7 @@ import Deck from './Components/Deck';
 import Pieces from './Components/Pieces'
 import Settlement from './Components/Settlement'
 import RoadPiece from './Components/RoadPiece';
+import Resources from './Components/Resources';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import {io} from 'socket.io-client';
@@ -235,8 +236,9 @@ function App() {
     </div>
     <div className={style.sideCol}>
     CARDS AND PIECES
-    <Deck/>
+    <Deck dCards={5}/>
     <Pieces/>
+    <Resources/>
     </div> 
     
     </div>
