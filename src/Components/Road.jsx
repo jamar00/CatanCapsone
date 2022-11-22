@@ -6,8 +6,8 @@ import { ItemTypes } from '../Constants'
 const style = {
     road : `h-15 w-3 bg-gray-600 my-6 -mx-1.5 z-10 <hover:bg-gray-700></hover:bg-gray-700>`,
     redRoad : `h-15 w-3 bg-red-600 my-6 -mx-1.5 z-10`,
-    rdRoad : `h-15 w-3 bg-gray-600 my-7 mx-[18px] z-10 rotate-90`,
-    ldRoad : `h-15 w-3 bg-gray-600 my-7 mx-[18px] z-10 rotate-270`
+    rdRoad : `h-15 w-3 bg-gray-600 my-7 mx-[18px] z-10 rotate-60`,
+    ldRoad : `h-15 w-3 bg-gray-600 my-7 mx-[18px] z-10 rotate-300`
 }
 
 function Road(props) {
