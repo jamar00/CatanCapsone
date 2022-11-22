@@ -1,7 +1,7 @@
 import React from 'react';
 
 const style = {
-    container : `h-30 w-auto bg-gray-700 mt-28 mx-4 mb-6 text-gray-200 mt-6`,
+    container : `h-30 w-auto bg-gray-700 mt-6 mx-4 mb-6 text-gray-200 mt-6`,
     lumberCard :`h-24 w-16 mx-2 bg-green-600 border-2 border-black border-style-solid rounded-md`,
     woolCard: `h-24 w-16 mx-2 bg-gray-200 border-2 border-black border-style-solid rounded-md`,
     clayCard: `h-24 w-16 mx-2 bg-orange-700 border-2 border-black border-style-solid rounded-md`,
