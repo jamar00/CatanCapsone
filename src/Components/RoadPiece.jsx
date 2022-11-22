@@ -5,7 +5,7 @@ import { ItemTypes } from '../Constants'
 import {useDrag} from 'react-dnd';
 
 const style = {
-    road : `h-15 w-3 bg-gray-600 my-7 mx-[18px] z-10 rotate-300`
+    road : `h-15 w-3 bg-gray-600 my-7 mx-[18px] z-10 rotate-[300deg]`
 }
 
 function RoadPiece(){
