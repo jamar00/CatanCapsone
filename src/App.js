@@ -238,7 +238,7 @@ function App() {
     CARDS AND PIECES
     <Deck dCards={5}/>
     <Pieces/>
-    <Resources/>
+    <Resources lumber={5}/>
     </div> 
     
     </div>

@@ -6,7 +6,7 @@ const style = {
     woolCard: `h-24 w-16 mx-2 bg-gray-200 border-2 border-black border-style-solid rounded-md`,
     clayCard: `h-24 w-16 mx-2 bg-orange-700 border-2 border-black border-style-solid rounded-md`,
     wheatCard: `h-24 w-16 mx-2 bg-yellow-400 border-2 border-black border-style-solid rounded-md`,
-    puck : `h-10 w-10 mt-2 font-bold text-gray-700 rounded-full bg-yellow-200 flex items-center justify-center font-mono text-center m-auto`
+    puck : `h-8 w-8 mt-1 mb-1 font-bold text-gray-700 rounded-full bg-gray-200 flex items-center justify-center font-mono text-center m-auto`
 }
 
 function Resources(props) {
@@ -15,22 +15,30 @@ function Resources(props) {
         <div class="bg-gray-300 text-black font-medium">
             Resources
         </div>
-        <div class="flex flex-row justify-center">
+        <div class="flex flex-row justify-center ">
         <div>
         <div className={style.lumberCard}/>
-        <div className={style.puck}/>
+        <div className={style.puck}>
+            {props.lumber}
+        </div>
         </div>
         <div>
         <div className={style.woolCard}/>
-        <div className={style.puck}/>
+        <div className={style.puck}>
+            {props.wool}
+        </div>
         </div>
         <div>
         <div className={style.clayCard}/>
-        <div className={style.puck}/>
+        <div className={style.puck}>
+            {props.clay}
+        </div>
         </div>
         <div>
         <div className={style.wheatCard}/>
-        <div className={style.puck}/>
+        <div className={style.puck}>
+            {props.wheat}
+        </div>
         </div>
         </div>
         </div>
