@@ -74,9 +74,6 @@ function App() {
     <SeaHex/>
     </div>
     <div className={style.roadRow}>
-    <Road dir={2}/>
-    <Settlement/>
-    <Road dir={1}/>
     <Settlement h={1}/>
     <Road dir={2}/>
     <Settlement/>
@@ -89,6 +86,11 @@ function App() {
     <Road dir={2}/>
     <Settlement/>
     <Road dir={1}/>
+    <Settlement h={1}/>
+    <Road dir={2}/>
+    <Settlement/>
+    <Road dir={1}/>
+    <Settlement h={1}/>
     </div>
     <div className={style.row}>
     <SeaHex/>
@@ -104,9 +106,6 @@ function App() {
     <SeaHex/>
     </div>
     <div className={style.roadRow}>
-    <Road dir={2}/>
-    <Settlement/>
-    <Road dir={1}/>
     <Settlement h={1}/>
     <Road dir={2}/>
     <Settlement/>
@@ -123,6 +122,11 @@ function App() {
     <Road dir={2}/>
     <Settlement/>
     <Road dir={1}/>
+    <Settlement h={1}/>
+    <Road dir={2}/>
+    <Settlement/>
+    <Road dir={1}/>
+    <Settlement h={1}/>
     </div>
     <div className={style.row}>
     <SeaHex/>
