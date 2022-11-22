@@ -4,7 +4,7 @@ import SeaHex from './Components/SeaHex'
 import Road from './Components/Road';
 import Deck from './Components/Deck';
 import Pieces from './Components/Pieces'
-import Settlement from './Components/Settlement'
+import Intersection from './Components/Intersection'
 import RoadPiece from './Components/RoadPiece';
 import Resources from './Components/Resources';
 import { DndProvider } from 'react-dnd';
@@ -49,19 +49,19 @@ function App() {
     <SeaHex/>
     </div>
     <div className={style.roadRow}>
-    <Settlement h={1}/>
+    <Intersection h={1}/>
     <Road dir={2}/>
-    <Settlement/>
+    <Intersection/>
     <Road dir={1}/>
-    <Settlement h={1}/>
+    <Intersection h={1}/>
     <Road dir={2}/>
-    <Settlement/>
+    <Intersection/>
     <Road dir={1}/>
-    <Settlement h={1}/>
+    <Intersection h={1}/>
     <Road dir={2}/>
-    <Settlement/>
+    <Intersection/>
     <Road dir={1}/>
-    <Settlement h={1}/>
+    <Intersection h={1}/>
     </div>
     <div className={style.row}>
     <SeaHex/>
@@ -75,23 +75,23 @@ function App() {
     <SeaHex/>
     </div>
     <div className={style.roadRow}>
-    <Settlement h={1}/>
+    <Intersection h={1}/>
     <Road dir={2}/>
-    <Settlement/>
+    <Intersection/>
     <Road dir={1}/>
-    <Settlement h={1}/>
+    <Intersection h={1}/>
     <Road dir={2}/>
-    <Settlement/>
+    <Intersection/>
     <Road dir={1}/>
-    <Settlement h={1}/>
+    <Intersection h={1}/>
     <Road dir={2}/>
-    <Settlement/>
+    <Intersection/>
     <Road dir={1}/>
-    <Settlement h={1}/>
+    <Intersection h={1}/>
     <Road dir={2}/>
-    <Settlement/>
+    <Intersection/>
     <Road dir={1}/>
-    <Settlement h={1}/>
+    <Intersection h={1}/>
     </div>
     <div className={style.row}>
     <SeaHex/>
@@ -107,27 +107,27 @@ function App() {
     <SeaHex/>
     </div>
     <div className={style.roadRow}>
-    <Settlement h={1}/>
+    <Intersection h={1}/>
     <Road dir={2}/>
-    <Settlement/>
+    <Intersection/>
     <Road dir={1}/>
-    <Settlement h={1}/>
+    <Intersection h={1}/>
     <Road dir={2}/>
-    <Settlement/>
+    <Intersection/>
     <Road dir={1}/>
-    <Settlement h={1}/>
+    <Intersection h={1}/>
     <Road dir={2}/>
-    <Settlement/>
+    <Intersection/>
     <Road dir={1}/>
-    <Settlement h={1}/>
+    <Intersection h={1}/>
     <Road dir={2}/>
-    <Settlement/>
+    <Intersection/>
     <Road dir={1}/>
-    <Settlement h={1}/>
+    <Intersection h={1}/>
     <Road dir={2}/>
-    <Settlement/>
+    <Intersection/>
     <Road dir={1}/>
-    <Settlement h={1}/>
+    <Intersection h={1}/>
     </div>
     <div className={style.row}>
     <SeaHex/>
@@ -145,27 +145,27 @@ function App() {
     <SeaHex/>
     </div>
     <div className={style.roadRow}>
-    <Settlement/>
+    <Intersection/>
     <Road dir={1}/>
-    <Settlement h={1}/>
+    <Intersection h={1}/>
     <Road dir={2}/>
-    <Settlement/>
+    <Intersection/>
     <Road dir={1}/>
-    <Settlement h={1}/>
+    <Intersection h={1}/>
     <Road dir={2}/>
-    <Settlement/>
+    <Intersection/>
     <Road dir={1}/>
-    <Settlement h={1}/>
+    <Intersection h={1}/>
     <Road dir={2}/>
-    <Settlement/>
+    <Intersection/>
     <Road dir={1}/>
-    <Settlement h={1}/>
+    <Intersection h={1}/>
     <Road dir={2}/>
-    <Settlement/>
+    <Intersection/>
     <Road dir={1}/>
-    <Settlement h={1}/>
+    <Intersection h={1}/>
     <Road dir={2}/>
-    <Settlement/>
+    <Intersection/>
     </div>
     <div className={style.row}>
     <SeaHex/>
@@ -181,23 +181,23 @@ function App() {
     <SeaHex/>
     </div>
     <div className={style.roadRow}>
-    <Settlement/>
+    <Intersection/>
     <Road dir={1}/>
-    <Settlement h={1}/>
+    <Intersection h={1}/>
     <Road dir={2}/>
-    <Settlement/>
+    <Intersection/>
     <Road dir={1}/>
-    <Settlement h={1}/>
+    <Intersection h={1}/>
     <Road dir={2}/>
-    <Settlement/>
+    <Intersection/>
     <Road dir={1}/>
-    <Settlement h={1}/>
+    <Intersection h={1}/>
     <Road dir={2}/>
-    <Settlement/>
+    <Intersection/>
     <Road dir={1}/>
-    <Settlement h={1}/>
+    <Intersection h={1}/>
     <Road dir={2}/>
-    <Settlement/>
+    <Intersection/>
     </div>
     <div className={style.row}>
     <SeaHex/>
@@ -211,19 +211,19 @@ function App() {
     <SeaHex/>
     </div>
     <div className={style.roadRow}>
-    <Settlement/>
+    <Intersection/>
     <Road dir={1}/>
-    <Settlement h={1}/>
+    <Intersection h={1}/>
     <Road dir={2}/>
-    <Settlement/>
+    <Intersection/>
     <Road dir={1}/>
-    <Settlement h={1}/>
+    <Intersection h={1}/>
     <Road dir={2}/>
-    <Settlement/>
+    <Intersection/>
     <Road dir={1}/>
-    <Settlement h={1}/>
+    <Intersection h={1}/>
     <Road dir={2}/>
-    <Settlement/>
+    <Intersection/>
     </div>
     <div className={style.row}>
     <SeaHex/>
