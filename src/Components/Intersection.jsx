@@ -73,10 +73,9 @@ function Intersection(props) {
                             style.botSettlement :
                             style.botInit} ref={drop}/>);
         default : 
-        return(
-            <div className={style.topInit}>
-            </div>
-        );
+        return(<div className={ hasDropped ? 
+            style.topSettlement :
+            style.topInit} ref={drop}/>);
     }
   }
 
