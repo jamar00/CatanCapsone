@@ -14,7 +14,7 @@ const Navbar = () => {
     console.log(user)
     return (
         <div className={style.nav}>
-            <h1 className={style.heading}>CATAN SAMPLE</h1>
+            <h1 className={style.heading}>CHAT</h1>
             {user ? <LogOut /> : <SignIn/>}
 
         </div>
