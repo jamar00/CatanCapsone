@@ -10,3 +10,8 @@ root.render(
   </React.StrictMode>
 );
 
+const el = document.getElementById('./Components/Chat/Chat');
+// id of the chat container ---------- ^^^
+if (el) {
+  el.scrollTop = el.scrollHeight;
+}

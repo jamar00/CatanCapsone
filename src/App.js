@@ -9,6 +9,7 @@ import RoadPiece from './Components/RoadPiece';
 import Resources from './Components/Resources';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
+import ChatBox from './Components/Chat/ChatBox';
 import {io} from 'socket.io-client';
 
 const style = {
@@ -27,13 +28,7 @@ function App() {
     <DndProvider backend={HTML5Backend}>
     <div className={style.appContainer}>
     <div className={style.sideCol}>
-      CHAT
-    <div class="bg-gray-700 h-auto w-auto m-4 rounded-md">
-      HI
-    </div>
-    <div class="bg-gray-700 h-auto w-auto m-4 rounded-md">
-      Hello
-    </div>
+    <ChatBox/>
     </div>
     <div className={style.midCol}>
     <div className={style.titleCard}>
@@ -236,9 +231,9 @@ function App() {
     </div>
     <div className={style.sideCol}>
     CARDS AND PIECES
-    <Deck dCards={5}/>
+    <Deck dCards={'X'}/>
     <Pieces/>
-    <Resources lumber={5}/>
+    <Resources lumber={'X'} wool={'X'} wheat={'X'} clay={'X'}/>
     </div> 
     
     </div>
