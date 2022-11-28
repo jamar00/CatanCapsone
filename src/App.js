@@ -11,6 +11,7 @@ import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import ChatBox from './Components/Chat/ChatBox';
 import {io} from 'socket.io-client';
+import EndButton from './Components/EndButton';
 
 const style = {
   appContainer : `w-screen flex flex-row`,
@@ -239,7 +240,7 @@ function App() {
     <Deck dCards={'X'}/>
     <Pieces/>
     <Resources lumber={'X'} wool={'X'} wheat={'X'} clay={'X'}/>
-    
+    <EndButton/>
     </div> 
     
     </div>

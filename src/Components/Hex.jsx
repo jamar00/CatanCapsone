@@ -11,7 +11,7 @@ const style = {
     clip-path-polygon-[50%_0,_100%_25%,_100%_75%,_50%_100%,_0_75%,_0_25%]`,
     oreHex : `w-24 h-28 bg-gray-800 text-center text-align-center flex items-center
     clip-path-polygon-[50%_0,_100%_25%,_100%_75%,_50%_100%,_0_75%,_0_25%]`,
-    desertHex : `w-24 h-28 bg-yellow-100 text-center text-align-center flex items-center
+    desertHex : `w-24 h-28 bg-yellow-200 text-center text-align-center flex items-center
     clip-path-polygon-[50%_0,_100%_25%,_100%_75%,_50%_100%,_0_75%,_0_25%]`,
     hex : `w-24 h-28 bg-red-900 text-center text-align-center flex items-center
     clip-path-polygon-[50%_0,_100%_25%,_100%_75%,_50%_100%,_0_75%,_0_25%]`,
