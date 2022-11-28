@@ -24,6 +24,11 @@ const style = {
 }
 
 function App() {
+  fetch('https://catan-backend.herokuapp.com/', {
+   method: 'GET',
+})
+  .then((response) => response.text())
+  .then((data) => console.log(data));
   return (
     <DndProvider backend={HTML5Backend}>
     <div className={style.appContainer}>
@@ -234,6 +239,7 @@ function App() {
     <Deck dCards={'X'}/>
     <Pieces/>
     <Resources lumber={'X'} wool={'X'} wheat={'X'} clay={'X'}/>
+    
     </div> 
     
     </div>

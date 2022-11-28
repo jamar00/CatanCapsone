@@ -45,28 +45,6 @@ function Intersection(props) {
         console.log("do stuff once a piece has been dragged in");
       }
   }, [hasDropped])
-    // switch(props.dir) {
-    //     case 1:
-    //         return(
-    //         <div className={style.ldRoad} ref={drop}
-    //         style={
-    //             hasDropped ? 
-    //             {backgroundColor:'red'} :
-    //             {backgroundColor:'gray-600'}}
-    //             />);
-    //     case 2:
-    //         return(<div className={style.rdRoad} ref={drop}
-    //           style={
-    //             hasDropped ? 
-    //             {backgroundColor:'red'} :
-    //             {backgroundColor:'gray-600'}}/>);
-    //     default:
-    //         return(<div className={style.road} ref={drop}
-    //           style={
-    //             hasDropped ? 
-    //             {backgroundColor:'red'} :
-    //             {backgroundColor:'gray-600'}} />)
-    // } 
     switch (props.h) {
         case 1 :
             return(<div className={ hasDropped ? 
