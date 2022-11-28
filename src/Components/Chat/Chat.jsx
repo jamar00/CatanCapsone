@@ -4,8 +4,9 @@ import SendMessage from "./SendMessage";
 import {db} from '../../firebase'
 import {query,collection,orderBy,onSnapshot} from 'firebase/firestore'
 
+
 const style = {
-    main: `flex flex-col p-[10px] relative max-h[200px] max-w[400px] bg-gray-300`
+    main: ` relative pb-14 flex flex-col overflow-auto p-[10px] max-h[200px] max-w[400px] padding-bottom-16`
 }
 
 
