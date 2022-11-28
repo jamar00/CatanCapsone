@@ -66,11 +66,11 @@ function App() {
     <div className={style.row}>
     <SeaHex/>
     <Road/>
-    <Hex id={12}/>
+    <Hex id={12} r={'lumber'}/>
     <Road/>
-    <Hex id={6}/>
+    <Hex id={6} r={'wool'}/>
     <Road/>
-    <Hex id={5}/>
+    <Hex id={5} r={'wheat'}/>
     <Road/>
     <SeaHex/>
     </div>
@@ -96,13 +96,13 @@ function App() {
     <div className={style.row}>
     <SeaHex/>
     <Road/>
-    <Hex/>
+    <Hex r={'clay'}/>
     <Road/>
-    <Hex/>
+    <Hex r={'ore'}/>
     <Road/>
-    <Hex/>
+    <Hex r={'clay'}/>
     <Road/>
-    <Hex/>
+    <Hex r={'wool'}/>
     <Road/>
     <SeaHex/>
     </div>
@@ -132,15 +132,15 @@ function App() {
     <div className={style.row}>
     <SeaHex/>
     <Road/>
-    <Hex/>
+    <Hex r={'desert'}/>
     <Road/>
-    <Hex/>
+    <Hex r={'lumber'}/>
     <Road/>
-    <Hex/>
+    <Hex r={'wheat'}/>
     <Road/>
-    <Hex/>
+    <Hex r={'lumber'}/>
     <Road/>
-    <Hex/>
+    <Hex r={'wheat'}/>
     <Road/>
     <SeaHex/>
     </div>
@@ -170,13 +170,13 @@ function App() {
     <div className={style.row}>
     <SeaHex/>
     <Road/>
-    <Hex/>
+    <Hex r={'clay'}/>
     <Road/>
-    <Hex/>
+    <Hex r={'wool'}/>
     <Road/>
-    <Hex/>
+    <Hex r={'wool'}/>
     <Road/>
-    <Hex/>
+    <Hex r={'ore'}/>
     <Road/>
     <SeaHex/>
     </div>
@@ -202,11 +202,11 @@ function App() {
     <div className={style.row}>
     <SeaHex/>
     <Road/>
-    <Hex/>
+    <Hex r={'ore'}/>
     <Road/>
-    <Hex/>
+    <Hex r={'wheat'}/>
     <Road/>
-    <Hex/>
+    <Hex r={'lumber'}/>
     <Road/>
     <SeaHex/>
     </div>
