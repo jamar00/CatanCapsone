@@ -12,7 +12,32 @@ const style = {
     botCity : `w-6 h-6 -mx-3 mt-14 bg-gray-700 clip-path-polygon-[0_100%,_100%_100%,_100%_25%,_75%_0,_50%_25%,_50%_50%,_0_50%] z-20`
 }
 
+function getStyle(prop, val){
+  switch(prop){
+  case(1):
+  switch(val){
+    case(0):return style.botInit;
+    case(1):return style.botSettlement;
+    default:return style.botCity;
+  }
+  default:
+  switch(val){
+    case(0):return style.topInit;
+    case(1):return style.topSettlement;
+    default:return style.topCity;
+    }
+  }
+}
+
 function Intersection(props) {
+  const [counter, setCounter] = useState(0);
+ 
+  //increase counter
+  const increase = () => {
+    if(counter<3){
+    setCounter(count => count + 1);
+    }
+  };
     const [hasDropped, setHasDropped] = useState(false)
     /*
      * A custom hook for react-dnd, uses a lambda to handle mouse events
@@ -23,6 +48,7 @@ function Intersection(props) {
     accept: ItemTypes.PIECE,
     //upon a drop call, set hasDropped to true
     drop() {
+        increase();
         setHasDropped(true);
     },
     /*
@@ -45,16 +71,7 @@ function Intersection(props) {
         console.log("do stuff once a piece has been dragged in");
       }
   }, [hasDropped])
-    switch (props.h) {
-        case 1 :
-            return(<div className={ hasDropped ? 
-                            style.botSettlement :
-                            style.botInit} ref={drop}/>);
-        default : 
-        return(<div className={ hasDropped ? 
-            style.topSettlement :
-            style.topInit} ref={drop}/>);
-    }
+    return(<div className={getStyle(props.h,counter)} ref={drop}/>)
   }
 
 export default Intersection;

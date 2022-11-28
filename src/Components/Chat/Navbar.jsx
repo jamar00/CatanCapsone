@@ -5,7 +5,7 @@ import {auth} from '../../firebase'
 import {useAuthState} from 'react-firebase-hooks/auth'
 
 const style ={
-    nav: `bg-gray-800 h-20 flex justify-between items-center p-4`,
+    nav: ` rounded bg-gray-800 h-20 flex justify-between items-center p-4`,
     heading: `text-white text-3xl`
 }
 

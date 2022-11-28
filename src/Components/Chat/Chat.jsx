@@ -6,7 +6,7 @@ import {query,collection,orderBy,onSnapshot} from 'firebase/firestore'
 
 
 const style = {
-    main: ` relative pb-14 flex flex-col-reverse overflow-auto p-[10px] max-h[200px] max-w[400px] padding-bottom-16`
+    main: ` rounded relative pb-14 flex flex-col-reverse overflow-auto p-[10px] max-h[200px] max-w[400px] padding-bottom-16`
 }
 
 

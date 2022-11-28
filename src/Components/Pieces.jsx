@@ -1,7 +1,7 @@
 import React from 'react';
 import RoadPiece from './RoadPiece';
 import SettlementPiece from './SettlementPiece';
-import City from './City';
+import CityPiece from './CityPiece';
 
 const style = {
     container : `h-24 w-auto bg-gray-700 mx-4 mt-6`,
@@ -19,7 +19,7 @@ function Pieces(props) {
             <SettlementPiece/>                
             </div>
             <div class="mt-8 ml-8">
-            <City/>                
+            <CityPiece/>                
             </div>
             </div>
         </div>
