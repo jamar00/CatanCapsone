@@ -1,3 +1,10 @@
+/*
+A class to define the settlement piece and drag and drop functionality
+Author(s): Jonathan Amar
+Version: 15 December 2022
+Catan Capstone Project
+*/
+
 import React from 'react';
 import { ItemTypes } from '../Constants';
 import {useDrag} from 'react-dnd';

@@ -1,3 +1,10 @@
+/*
+A class to handle message display logic and DB functionality
+Author(s): Jonathan Amar
+Version: 15 December 2022
+Catan Capstone Project
+*/
+
 import React, {useState} from "react";
 import {auth, db} from '../../firebase'
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";

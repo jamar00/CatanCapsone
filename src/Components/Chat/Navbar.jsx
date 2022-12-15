@@ -1,3 +1,10 @@
+/*
+A class to define the navbar at the top of the chat window
+Author(s): Jonathan Amar
+Version: 15 December 2022
+Catan Capstone Project
+*/
+
 import React from 'react'
 import SignIn from './SignIn'
 import LogOut from './LogOut'

@@ -1,3 +1,10 @@
+/*
+A class to define individual message components and functionality
+Author(s): Jonathan Amar
+Version: 15 December 2022
+Catan Capstone Project
+*/
+
 import React from 'react'
 import { auth } from '../../firebase'
 

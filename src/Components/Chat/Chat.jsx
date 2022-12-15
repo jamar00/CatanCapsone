@@ -1,3 +1,10 @@
+/*
+A class incorperating all chat components to make a functional chat window
+Author(s): Jonathan Amar
+Version: 15 December 2022
+Catan Capstone Project
+*/
+
 import React, {useState, useEffect, useRef} from "react";
 import Message from './Message'
 import SendMessage from "./SendMessage";

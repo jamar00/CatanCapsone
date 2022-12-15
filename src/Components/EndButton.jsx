@@ -1,3 +1,10 @@
+/*
+
+Author(s): Jonathan Amar
+Version: 15 December 2022
+Catan Capstone Project
+*/
+
 import React from 'react';
 
 const style = {

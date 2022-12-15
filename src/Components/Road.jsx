@@ -1,3 +1,10 @@
+/*
+
+Author(s): Jonathan Amar
+Version: 15 December 2022
+Catan Capstone Project
+*/
+
 import React, { useEffect } from 'react';
 import { useState } from 'react'
 import { useDrop } from 'react-dnd'

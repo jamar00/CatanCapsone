@@ -1,3 +1,10 @@
+/*
+A class to display the entire GUI on the frontend.
+Author(s): Jonathan Amar
+Version: 15 December 2022
+Catan Capstone Project
+*/
+
 import React from 'react';
 import Hex from './Components/Hex';
 import SeaHex from './Components/SeaHex'
@@ -47,7 +54,7 @@ function App() {
     <SeaHex/>
     <SeaHex/>
     </div>
-    
+
     <div className={style.roadRow}>
     <Intersection h={1}/>
     <Road dir={2}/>

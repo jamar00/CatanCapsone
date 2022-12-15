@@ -1,3 +1,10 @@
+/*
+A class to define the login button and login and authentication functionality
+Author(s): Jonathan Amar
+Version: 15 December 2022
+Catan Capstone Project
+*/
+
 import React from 'react'
 import GoogleButton from 'react-google-button'
 import {auth} from '../../firebase'

@@ -1,7 +1,13 @@
+/*
+A class to define a Container for chat messages
+Author(s): Jonathan Amar
+Version: 15 December 2022
+Catan Capstone Project
+*/
+
 import React from 'react'
 import Navbar from './Navbar'
 import Chat from './Chat'
-
 import {auth} from '../../firebase'
 import {useAuthState} from 'react-firebase-hooks/auth'
 
