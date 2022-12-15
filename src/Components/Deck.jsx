@@ -28,7 +28,7 @@ function Deck(props) {
         <div className={style.card}/>
         <div className={style.card}/>
         </div>
-        // Use the development cards prop to display the number of cards
+        {/*Use the development cards prop to display the number of cards*/}
         Development Cards : {props.dCards}
         </div>
     );
