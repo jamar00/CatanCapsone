@@ -6,8 +6,10 @@ const style = {
 }
 
 function SeaHex(props) {
+    // Return a div element representing the sea hex
     return(
         <div className={style.seaHex}>
+            {/* Use the text property from the props object to render text inside the sea hex div */}
             {props.text}
         </div>
     );

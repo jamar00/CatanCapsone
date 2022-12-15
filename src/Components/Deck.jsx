@@ -5,7 +5,9 @@ const style = {
     card :`h-16 w-8 bg-gray-400 border-2 border-black border-style-solid rounded-md -mr-2`
 }
 
+// React component for rendering a deck of cards for a player
 function Deck(props) {
+    // Render the container, player name, and cards
     return(
         <div className={style.deck}>
         <div class="bg-gray-300 display-table mb-1 text-black font-medium">
@@ -19,6 +21,7 @@ function Deck(props) {
         <div className={style.card}/>
         <div className={style.card}/>
         </div>
+        // Use the development cards prop to display the number of cards
         Development Cards : {props.dCards}
         </div>
     );

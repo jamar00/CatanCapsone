@@ -18,6 +18,8 @@ const style = {
     puck : `h-10 w-10 font-bold text-gray-700 rounded-full bg-yellow-200 flex items-center justify-center font-mono text-center m-auto`,
 }
 
+// Define a function that returns the appropriate style class
+// for a hexagon based on the value of the "r" property
 function getStyle(props) {
     switch(props){
         case("wheat"):return style.wheatHex;
@@ -30,9 +32,12 @@ function getStyle(props) {
     }
 }
 
+// Define a Hex component that takes a "r" and an "id" property as inputs
 function Hex(props) {
     return(
+        // Create a div element with the "hex" class and the style class returned by getStyle
         <div class="hex" className={getStyle(props.r)}>
+            {/*Create an inner div element with the "puck" class that displays the value of the "id" property*/}
             <div className={style.puck}>
             {props.id}
             </div>

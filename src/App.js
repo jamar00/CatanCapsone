@@ -25,15 +25,12 @@ const style = {
 }
 
 function App() {
-//   fetch('https://catan-backend.herokuapp.com/', {
-//    method: 'GET',
-// })
-//   .then((response) => response.text())
-//   .then((data) => console.log(data));
   return (
+    // Use the DndProvider component from the react-dnd library to enable drag and drop functionality
     <DndProvider backend={HTML5Backend}>
     <div className={style.appContainer}>
     <div className={style.sideCol}>
+    {/* Display the ChatBox component */}
     <ChatBox/>
     </div>
     <div className={style.midCol}>
@@ -44,11 +41,13 @@ function App() {
     </div>
     <div className={style.board}>
     <div className={style.topRow}>
+    {/* Display top row of SeaHex components */}
     <SeaHex text="3 Wood : 1 Wool"/>
     <SeaHex/>
     <SeaHex/>
     <SeaHex/>
     </div>
+    
     <div className={style.roadRow}>
     <Intersection h={1}/>
     <Road dir={2}/>

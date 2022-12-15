@@ -11,38 +11,57 @@ const style = {
 }
 
 function Resources(props) {
+    // Return a div element containing other elements
     return(
+        // Apply the "container" class to the outer div element
         <div className={style.container}>
+        {/* Add a div element with the "bg-gray-300 text-black font-medium" classes applied */}
         <div class="bg-gray-300 text-black font-medium">
             Resources
         </div>
+        {/* Add a div element with the "flex flex-row justify-center" classes applied */}
         <div class="flex flex-row justify-center ">
+        {/* Add a div element containing an image and text for the "lumber" resource */}
         <div>
+        {/* Apply the "lumberCard" class to the div element containing the lumber image */}
         <div className={style.lumberCard}/>
+        {/* Add a div element with the "puck" class applied, containing the lumber count from the props object */}
         <div className={style.puck}>
             {props.lumber}
         </div>
         </div>
+        {/* Add a div element containing an image and text for the "wool" resource */}
         <div>
+        {/* Apply the "woolCard" class to the div element containing the wool image */}
         <div className={style.woolCard}/>
+        {/* Add a div element with the "puck" class applied, containing the wool count from the props object */}
         <div className={style.puck}>
             {props.wool}
         </div>
         </div>
+        {/* Add a div element containing an image and text for the "clay" resource */}
         <div>
+        {/* Apply the "clayCard" class to the div element containing the clay image */}
         <div className={style.clayCard}/>
+        {/* Add a div element with the "puck" class applied, containing the clay count from the props object */}
         <div className={style.puck}>
             {props.clay}
         </div>
         </div>
+        {/* Add a div element containing an image and text for the "wheat" resource */}
         <div>
+        {/* Apply the "wheatCard" class to the div element containing the wheat image */}
         <div className={style.wheatCard}/>
+        {/* Add a div element with the "puck" class applied, containing the wheat count from the props object */}
         <div className={style.puck}>
             {props.wheat}
         </div>
         </div>
+        {/* Add a div element containing an image and text for the "ore" resource */}
         <div>
+        {/* Apply the "oreCard" class to the div element containing the ore image */}
         <div className={style.oreCard}/>
+        {/* Add a div element with the "puck" class applied, containing the ore count from the props object */}
         <div className={style.puck}>
             {props.wheat}
         </div>

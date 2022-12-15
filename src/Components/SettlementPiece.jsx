@@ -7,25 +7,24 @@ const style = {
 }
 
 function SettlementPiece() {
+    // Use the useDrag hook from the react-dnd library to enable drag and drop functionality
     const [, drag] = useDrag(() => ({ 
-        //Only divs with the type PIECE can have the source functionality
+        // Only divs with the type PIECE can have the source functionality
           type: ItemTypes.PIECE,
-          /*
-           * A method built in to react-dnd, collects mouse event data relating to the target div,
-           * @param item the target div, automatically passed via react-dnd builtin functionality
-           * @param monitor the object used to monitor mouse data and interactions
-           */
+          // Collect mouse event data relating to the target div
            end: (item, monitor) => {
              const dropResult = monitor.getDropResult()
              if (item && dropResult) {
                console.log(dropResult);
              }
            },
-         }))     
+         }))
+
+      // Return a div element representing the settlement piece
       return(
           <div
           className={style.settlement}
-          //sets this div as the source for a target.
+          // Use the drag reference from the useDrag hook to enable drag and drop functionality
           ref={drag} 
           
           />)   

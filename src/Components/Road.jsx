@@ -10,42 +10,42 @@ const style = {
 }
 
 function Road(props) {
+    // Use the useState hook to track the state of the hasDropped variable
     const [hasDropped, setHasDropped] = useState(false)
-    /*
-     * A custom hook for react-dnd, uses a lambda to handle mouse events
-     */
+    // Use the useDrop hook from the react-dnd library to enable drag and drop functionality
   const [, drop] = useDrop(
+  // Define an object with the configuration for the useDrop hook
   () => ({
-    //Only divs with the type PIECE can have the target functionality
+    // Only divs with the type ROAD can have the target functionality
     accept: ItemTypes.ROAD,
-    //upon a drop call, set hasDropped to true
+    // Upon a drop, set the hasDropped variable to true
     drop() {
         setHasDropped(true);
     },
-    /*
-     * A method built in to react-dnd, collects mouse event data relating to the source div
-     * @param monitor the object used to monitor mouse data and interactions
-     */
+    // Collect mouse event data relating to the source div
     collect: (monitor) => ({
       isOver: monitor.isOver(),
       canDrop: monitor.canDrop(),
     }),
   }),
-  //all of this occurs when useDrop occurs when setHasDropped is called
+  // Pass the setHasDropped function as a dependency for useDrop
   [setHasDropped]
 );
-    /*
-     * Prints a message when a div is dropped
-     */
+    
+    // Use the useEffect hook to log a message to the console when a road piece is dropped on the road div
     useEffect(() => {
       if (hasDropped) {
         console.log("do stuff once a piece has been dragged in");
       }
   }, [hasDropped])
+    // Use a switch statement to render a different div element depending on the value of the dir property from the props object
     switch(props.dir) {
         case 1:
             return(
-            <div className={style.ldRoad} ref={drop}
+            <div className={style.ldRoad} 
+            // Use the drop reference from the useDrop hook to enable drag and drop functionality
+            ref={drop}
+            // Use inline styles to set the background color of the div based on the value of the hasDropped variable
             style={
                 hasDropped ? 
                 {backgroundColor:'red'} :
@@ -53,12 +53,17 @@ function Road(props) {
                 />);
         case 2:
             return(<div className={style.rdRoad} ref={drop}
+              // Use inline styles to set the background color of the div based on the value of the hasDropped variable
               style={
                 hasDropped ? 
                 {backgroundColor:'red'} :
                 {backgroundColor:'gray-600'}}/>);
         default:
-            return(<div className={style.road} ref={drop}
+            return(<div 
+              className={style.road} 
+              // Use the drop reference from the useDrop hook to enable drag and drop functionality
+              ref={drop}
+              // Use inline styles to set the background color of the div based on the value of the hasDropped variable
               style={
                 hasDropped ? 
                 {backgroundColor:'red'} :
